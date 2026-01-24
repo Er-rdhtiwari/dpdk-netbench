@@ -38,6 +38,8 @@ class RunStatus(str, Enum):
 class Citation(BaseModel):
     """Citation metadata for KB-grounded responses."""
 
+    model_config = {"arbitrary_types_allowed": True}
+
     doc_id: str = Field(description="Document identifier")
     chunk_id: str = Field(description="Chunk identifier")
     source_file: str = Field(description="Source PDF filename")

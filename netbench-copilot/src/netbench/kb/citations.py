@@ -58,7 +58,7 @@ class CitationManager:
             citations: List of Citation objects
             output_path: Path to save citations JSON
         """
-        citations_data = [citation.model_dump() for citation in citations]
+        citations_data = [citation.dict() for citation in citations]
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, "w") as f:
