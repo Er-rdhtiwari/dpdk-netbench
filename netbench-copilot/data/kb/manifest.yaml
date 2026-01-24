@@ -1,0 +1,46 @@
+# NetBench Copilot - KB Manifest
+# 
+# This file tracks all PDFs in the knowledge base.
+# Add entries for each DPDK tuning guide or performance report.
+#
+# Format:
+# pdfs:
+#   - filename: <pdf-filename>
+#     vendor: <vendor-name>
+#     platform: <platform-name>
+#     version: <document-version>
+#     benchmark_tags: [list, of, benchmarks]
+#     epyc_family_tags: [list, of, epyc, families]
+#     release_tags: [list, of, dpdk, releases]
+
+version: "1.0"
+pdfs: []
+
+# Example entries (uncomment and modify after adding PDFs):
+#
+# pdfs:
+#   - filename: amd-epyc-7003-dpdk-tuning-guide.pdf
+#     vendor: AMD
+#     platform: EPYC
+#     version: "1.0"
+#     benchmark_tags: [cryptoperf, testpmd, l3fwd, l2fwd]
+#     epyc_family_tags: [7003]
+#     release_tags: [dpdk-23.11]
+#
+#   - filename: amd-epyc-9004-dpdk-crypto-performance.pdf
+#     vendor: AMD
+#     platform: EPYC
+#     version: "2.0"
+#     benchmark_tags: [cryptoperf]
+#     epyc_family_tags: [9004]
+#     release_tags: [dpdk-23.11, dpdk-24.03]
+#
+#   - filename: dpdk-nic-performance-report.pdf
+#     vendor: Intel
+#     platform: Generic
+#     version: "1.5"
+#     benchmark_tags: [testpmd, l3fwd, l2fwd]
+#     epyc_family_tags: []
+#     release_tags: [dpdk-23.11]
+
+# Made with Bob
