@@ -1,0 +1,6 @@
+pdfs:
+  - file: sample_kb.pdf
+    vendor: synthetic
+    platform: generic
+    version: "0.1"
+    tags: [cryptoperf, testpmd, l3fwd, l2fwd, metrics, tuning]

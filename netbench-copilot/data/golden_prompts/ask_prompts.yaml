@@ -1,0 +1,4 @@
+- id: ask_metric_throughput
+  query: "What does throughput mean in testpmd metrics?"
+- id: ask_hugepages
+  query: "What hugepages guidance is recommended?"

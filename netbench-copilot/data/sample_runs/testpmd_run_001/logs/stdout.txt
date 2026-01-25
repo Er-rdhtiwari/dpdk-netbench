@@ -1,0 +1,8 @@
+# Synthetic sample log for testpmd
+Forwarding mode: io
+Stats for port 0
+Rx-pps: 12345678
+Tx-pps: 12345000
+Rx-bps: 9876543210
+Tx-bps: 9876500000
+Latency (us): 3.1

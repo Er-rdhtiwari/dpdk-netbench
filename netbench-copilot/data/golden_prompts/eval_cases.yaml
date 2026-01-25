@@ -1,0 +1,21 @@
+- id: eval_grounding_not_found
+  type: ask
+  query: "What is the best BIOS microcode version?"
+  expect: NOT_FOUND
+- id: eval_grounding_found
+  type: ask
+  query: "Define throughput metric."
+  expect_contains:
+    - "throughput"
+- id: eval_plan_schema
+  type: plan
+  benchmark: cryptoperf
+  platform: generic
+  nl: "AES-GCM cryptoperf on 4 cores"
+  expect_contains:
+    - "cryptoperf"
+- id: eval_parse_sample
+  type: parse
+  benchmark: testpmd
+  run_dir: data/sample_runs/testpmd_run_001
+  expect_metric: "pps"
