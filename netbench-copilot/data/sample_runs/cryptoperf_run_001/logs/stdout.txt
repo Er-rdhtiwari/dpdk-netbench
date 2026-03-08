@@ -1,0 +1,8 @@
+# Synthetic sample log for dpdk-test-crypto-perf
+Algorithm: AES-GCM
+Key Size: 128
+Burst Size: 32
+Total Operations: 1000000
+Ops/s: 250000
+Throughput (Gbps): 12.50
+Latency (us): 4.2

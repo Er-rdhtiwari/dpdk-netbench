@@ -1,0 +1,8 @@
+- id: plan_cryptoperf_basic
+  benchmark: cryptoperf
+  platform: generic
+  nl: "Run cryptoperf with AES-GCM on 4 cores and collect throughput"
+- id: plan_testpmd_basic
+  benchmark: testpmd
+  platform: generic
+  nl: "Run testpmd forwarding with 64B and 1518B frames"

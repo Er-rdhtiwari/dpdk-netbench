@@ -1,0 +1,58 @@
+[project]
+name = "netbench-copilot"
+version = "0.1.0"
+description = "NetBench Copilot: KB-grounded DPDK benchmark planning, parsing, and comparison"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "NetBench Copilot" }]
+keywords = ["dpdk", "benchmark", "rag", "llamaindex", "langgraph", "mcp"]
+
+dependencies = [
+  "typer>=0.12.0",
+  "pydantic>=2.6.0",
+  "pydantic-settings>=2.1.0",
+  "pyyaml>=6.0.1",
+  "structlog>=24.1.0",
+  "numpy>=1.26.0",
+  "pypdf>=4.2.0",
+  "llama-index>=0.10.0",
+  "langchain>=0.2.0",
+  "langchain-core>=0.2.0",
+  "langgraph>=0.1.0",
+  "rich>=13.7.0",
+  "ruff>=0.5.0",
+  "black>=24.0.0",
+  "pytest>=8.0.0",
+]
+
+[project.optional-dependencies]
+finetune = [
+  "transformers>=4.40.0",
+  "peft>=0.10.0",
+  "bitsandbytes>=0.43.0",
+]
+
+[project.scripts]
+netbench = "netbench.app:app"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true

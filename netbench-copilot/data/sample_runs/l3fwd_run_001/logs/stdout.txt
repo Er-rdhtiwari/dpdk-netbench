@@ -1,0 +1,6 @@
+# Synthetic sample log for l3fwd
+Ports: 2
+Packets RX: 1000000
+Packets TX: 999500
+Throughput (Mpps): 8.8
+Latency (us): 4.7
